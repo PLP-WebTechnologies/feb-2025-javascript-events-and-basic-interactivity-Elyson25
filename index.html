@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ultimate Javascript Playground</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>My Javascript Playground</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Event Handling Section -->
+    <section class="event-section">
+      <h2>Event Handling</h2>
+
+      <div class="event-box">
+        <button id="click-btn" class="event-btn">Click Me!</button>
+        <p id="click-output"></p>
+      </div>
+
+      <div class="event-box hover-box">
+        <p id="hover-output"></p>
+      </div>
+
+      <div class="event-box">
+        <input type="text" id="keypress-input" placeholder="Type something..." />
+        <p id="keypress-output"></p>
+      </div>
+
+      <div class="event-box secret-box">
+        <p>Double-click or hold for something cool!</p>
+        <p id="secret-output" class="hidden">🎉 You found the secret!</p>
+      </div>
+    </section>
+
+    <!-- Interactive Elements Section -->
+    <section id="interactive">
+      <h2>Interactive Elements</h2>
+
+      <!-- Button that changes text and color -->
+      <button id="colorChangeBtn">Click Me to Change!</button>
+
+      <!-- Simple Image Gallery -->
+      <div class="gallery">
+        <img id="galleryImage" src="https://picsum.photos/id/10/300/200" alt="Gallery Image" width="300" />
+        <div>
+          <button id="prevImage">Previous</button>
+          <button id="nextImage">Next</button>
+        </div>
+      </div>
+
+      <!-- Tabbed Content -->
+      <div class="tabs">
+        <div class="tab-buttons">
+          <button class="tab-btn active" data-tab="1">Tab 1</button>
+          <button class="tab-btn" data-tab="2">Tab 2</button>
+          <button class="tab-btn" data-tab="3">Tab 3</button>
+        </div>
+        <div class="tab-content active" id="tab-1">
+          <h3>Welcome to Tab 1</h3>
+          <p>Explore this section for more insight.</p>
+        </div>
+        <div class="tab-content" id="tab-2">
+          <h3>Tab 2 Content</h3>
+          <p>Here's something different to look at.</p>
+        </div>
+        <div class="tab-content" id="tab-3">
+          <h3>Final Tab</h3>
+          <p>Another unique section for your curiosity.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Form Handling Section -->
+    <section class="form-section">
+      <h2>Form Handling</h2>
+      <form id="signupForm">
+        <input type="text" id="name" placeholder="Name" required />
+        <input type="email" id="email" placeholder="Email" required />
+        <input type="password" id="password" placeholder="Password (min 8 chars)" required />
+        <button type="submit">Sign Up</button>
+        <div id="formFeedback"></div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My Javascript Playground</p>
+    <p>Created by Elyson</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
